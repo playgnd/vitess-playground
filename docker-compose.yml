@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  mysql-server:
+    image: mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+        # command: bash -c 'mysqld --general_log=1 --general_log_file=/var/log/mysql-query.log && tail -f /var/log/mysql-query.log'
+        # command: bash -c 'mysqld --general_log=1 --general_log_file=/var/log/mysql-query.log'
+  #mysql-client:
+    #image: mysql
+    ## command: mysql -u root -h mysql-server
+    #command: bash
